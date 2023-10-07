@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/gaming-forum-auth/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gaming-forum-auth/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gaming-forum-discovery-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gaming-forum-discovery-server/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gaming-forum-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gaming-forum-gateway/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gaming-forum/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gaming-forum/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

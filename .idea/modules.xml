@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Gaming Forum REST API.iml" filepath="$PROJECT_DIR$/.idea/Gaming Forum REST API.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gaming-forum/gaming-forum.iml" filepath="$PROJECT_DIR$/gaming-forum/gaming-forum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gaming-forum-auth/gaming-forum-auth.iml" filepath="$PROJECT_DIR$/gaming-forum-auth/gaming-forum-auth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gaming-forum-discovery-server/gaming-forum-discovery-server.iml" filepath="$PROJECT_DIR$/gaming-forum-discovery-server/gaming-forum-discovery-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gaming-forum-gateway/gaming-forum-gateway.iml" filepath="$PROJECT_DIR$/gaming-forum-gateway/gaming-forum-gateway.iml" />
+    </modules>
+  </component>
+</project>
