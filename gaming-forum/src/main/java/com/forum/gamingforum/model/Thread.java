@@ -21,13 +21,15 @@ public class Thread {
     @Column(nullable = false)
     private String title;
     @Column(nullable = false)
-    private Long authorId;
+    private Long author;
     @OneToMany(mappedBy = "thread",cascade = CascadeType.ALL)
     private List<Post> posts = new ArrayList<>();
     @Temporal(TemporalType.TIMESTAMP)
     private LocalDateTime dateAndTimeOfCreation;
     @Column
     private Long numberOfViews;
+    @ManyToOne
+    private Category category;
 
     @PrePersist
     protected void onCreate(){

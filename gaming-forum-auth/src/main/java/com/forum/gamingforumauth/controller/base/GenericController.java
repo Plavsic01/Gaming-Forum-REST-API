@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GenericController<DTO> {
+public abstract class GenericController<DTO> {
 
     @Autowired
     protected GenericService<DTO> service;

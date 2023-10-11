@@ -16,11 +16,15 @@ public class Post {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column(nullable = false)
+    private String title;
     @Lob
     private String content;
-    private Long authorId;
+    private Long author;
     @ManyToOne
     private Thread thread;
+    @Column
+    private Long numberOfViews;
     @Temporal(TemporalType.TIMESTAMP)
     private LocalDateTime dateAndTimeOfCreation;
 

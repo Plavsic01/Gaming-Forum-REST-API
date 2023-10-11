@@ -9,6 +9,6 @@ import lombok.*;
 public class RoleDTO {
     private Long id;
     @NotBlank(message = "Role name can not be empty")
-    private String authority;
+    private String name;
 
 }

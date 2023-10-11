@@ -1,6 +1,6 @@
 package com.forum.gamingforumauth.service;
 
-import jakarta.transaction.Transactional;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 

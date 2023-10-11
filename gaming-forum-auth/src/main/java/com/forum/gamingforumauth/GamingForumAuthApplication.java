@@ -4,11 +4,14 @@ import com.forum.gamingforumauth.model.Role;
 import com.forum.gamingforumauth.model.User;
 import com.forum.gamingforumauth.repository.RoleRepository;
 import com.forum.gamingforumauth.repository.UserRepository;
+import com.github.javafaker.Faker;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
+
+import java.util.ArrayList;
 
 @SpringBootApplication
 @EnableMethodSecurity(prePostEnabled = true,securedEnabled = true,jsr250Enabled = true)
@@ -34,8 +37,6 @@ public class GamingForumAuthApplication implements CommandLineRunner {
 		user.setUsername("username");
 		user.setEmail("email@email.com");
 		user.setPassword("$2a$12$r44M1kPO3hGVN0AEJ2woi.HNmeI9o3K71kqfKyd47JjT5su5N2IVu");
-//		user.setFirstName("ime");
-//		user.setLastName("prezime");
 		userRepository.save(user);
 	}
 
@@ -46,7 +47,6 @@ public class GamingForumAuthApplication implements CommandLineRunner {
 		roleUser.setName("ROLE_USER");
 		roleRepository.save(roleAdmin);
 		roleRepository.save(roleUser);
-
 	}
 
 }

@@ -2,6 +2,7 @@ package com.forum.gamingforumauth.service.user;
 
 import com.forum.gamingforumauth.dto.PasswordDTO;
 import com.forum.gamingforumauth.dto.UserDTO;
+import com.forum.gamingforumauth.dto.UserWithRolesDTO;
 import com.forum.gamingforumauth.exception.PasswordDoesNotMatchException;
 import com.forum.gamingforumauth.exception.UserNotFoundException;
 import com.forum.gamingforumauth.model.Role;
@@ -128,6 +129,16 @@ public class UserServiceImpl implements GenericService<UserDTO> {
         user.setPassword(null);
         user.setEmail(null);
         return modelMapper.map(user,UserDTO.class);
+    }
+
+    @PreAuthorize("hasAnyRole('ADMIN', 'USER') and (hasRole('ADMIN') or #username == authentication.principal.username)")
+    public UserWithRolesDTO feignClientFindByUsername(String username) {
+        User user = userRepository.findByUsername(username).orElse(null);
+        if(user == null){
+            throw new UserNotFoundException();
+        }
+        UserWithRolesDTO s = modelMapper.map(user,UserWithRolesDTO.class);
+        return modelMapper.map(user,UserWithRolesDTO.class);
     }
 
 }
