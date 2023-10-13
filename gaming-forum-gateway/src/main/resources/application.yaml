@@ -6,26 +6,15 @@ spring:
     name: gateway
   cloud:
     gateway:
-      global cors:
-        corsConfigurations:
-          '[/**]':
-            allowedOrigins: "http://localhost:4200"
-            allowedHeaders: "*"
-            allowedMethods:
-              - GET
-              - POST
-              - PUT
-              - DELETE
-#      routes:
-#        - id: user-service
-#          uri: lb://user-service
-#          predicates:
-#            - Path=/api/user/**
-#
-#        - id: university-service
-#          uri: lb://university-service
-#          predicates:
-#            - Path=/api/university/**
+      routes:
+        - id: auth-service
+          uri: lb://AUTH-SERVICE
+          predicates:
+            - Path=/api/user/**
+        - id: forum-service
+          uri: lb://FORUM-SERVICE
+          predicates:
+            - Path=/api/forum/**
 
 
 eureka:

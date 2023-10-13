@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: org.springframework.cloud:spring-cloud-context:4.1.0-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-context/4.1.0-SNAPSHOT/spring-cloud-context-4.1.0-20231009.102419-263.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-context/4.1.0-SNAPSHOT/spring-cloud-context-4.1.0-20231013.035904-270.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-context/4.1.0-SNAPSHOT/spring-cloud-context-4.1.0-20231009.102419-263-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-context/4.1.0-SNAPSHOT/spring-cloud-context-4.1.0-20231013.035904-270-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-context/4.1.0-SNAPSHOT/spring-cloud-context-4.1.0-20231009.102419-263-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-context/4.1.0-SNAPSHOT/spring-cloud-context-4.1.0-20231013.035904-270-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

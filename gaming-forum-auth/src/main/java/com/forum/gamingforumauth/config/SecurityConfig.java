@@ -27,8 +27,8 @@ public class SecurityConfig {
     SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http.sessionManagement(s -> s.sessionCreationPolicy(SessionCreationPolicy.STATELESS));
         http.authorizeHttpRequests((request) -> {
-            request.requestMatchers("/api/register").permitAll();
-            request.requestMatchers("/api/login").permitAll();
+            request.requestMatchers("/api/user/register").permitAll();
+            request.requestMatchers("/api/user/login").permitAll();
             request.anyRequest().authenticated();
         });
         http.formLogin(AbstractHttpConfigurer::disable);
