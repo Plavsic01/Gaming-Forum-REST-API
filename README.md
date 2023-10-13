@@ -2,9 +2,9 @@
 Gaming Forum REST API in Microservice Architecture with Spring Boot
 
 # Content
-- [About Forum](#about-forum)
-- [Architecture](#architecture-forum)
-- [Entities In System](#entities-forum)
+- [About Forum]
+- [Architecture]
+- [Entities In System]
 
 
 ## About Forum
