@@ -66,9 +66,10 @@ public class UserServiceImpl implements GenericService<UserDTO> {
         UserProfile userProfile = new UserProfile();
         userProfile.setUser(user);
         user.setUserProfile(userProfile);
-        userRepository.save(user);
-        user.setPassword(null);
-        return modelMapper.map(user,UserDTO.class);
+        user = userRepository.save(user);
+        UserDTO userDTO = modelMapper.map(user,UserDTO.class);
+        userDTO.setPassword(null);
+        return userDTO;
     }
 
     /* When user changes his username, on frontend we need to log out user and let him log in again

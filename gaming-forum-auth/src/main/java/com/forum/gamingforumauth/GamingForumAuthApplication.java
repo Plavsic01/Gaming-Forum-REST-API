@@ -4,14 +4,17 @@ import com.forum.gamingforumauth.model.Role;
 import com.forum.gamingforumauth.model.User;
 import com.forum.gamingforumauth.repository.RoleRepository;
 import com.forum.gamingforumauth.repository.UserRepository;
-import com.github.javafaker.Faker;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 
-import java.util.ArrayList;
+
+// TODO: DODATI EXPCETIONS IZ EXCEPTIONS CONTROLLERA IZ FORUM SERVISA
+// TODO: SREDITI SECURITY CONFIG 401 I 403 ISTO KAO U FORUM SERVISU STO JE URADJENO
+// TODO: VIDETI STA SA ROLES (KONTROLER,SERVIS)
+
 
 @SpringBootApplication
 @EnableMethodSecurity(prePostEnabled = true,securedEnabled = true,jsr250Enabled = true)

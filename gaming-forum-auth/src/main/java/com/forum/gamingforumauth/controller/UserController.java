@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/api/user/users")
 public class UserController extends GenericController<UserDTO> {
 
-    // Do this if I decide to have /register endpoint (think its better option to have /register endpoint)
     @Override
     public ResponseEntity<?> create(UserDTO entity, BindingResult result) {
         return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
